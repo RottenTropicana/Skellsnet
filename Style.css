@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+.content{
+  max-width: 600px;
+  text-align: center;
+}
 .leftsidebar{
   font-family: Libron;
   background-color: #222222;
