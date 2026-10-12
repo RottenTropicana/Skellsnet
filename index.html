@@ -1,78 +1,20 @@
 <!DOCTYPE html>
 <html>      
-    <style>
-        @font-face {
-            font-family: Libron;
-            src: url(/font/Libron-Regular.woff2) format(woff2);
-        }
-        @font-face {
-            font-family: Libron;
-            src: url(/font/Libron-Italic.woff2) format(woff2);
-            font-style: italic;
-        }
-        @font-face {
-            font-family: Libron;
-            src: url(/font/Libron-Bold.woff2) format(woff2);
-            font-weight: bold;
-        }
-        .p{
-            font-family: Libron;
-            }
-        .dialog{
-                &::backdrop{
-                    background: rgba(0, 0, 0, .5);
-                    backdrop-filter: blur(5px);
-                }
-                &[open]{
-                    background-color:#222222;color:aliceblue;
-                    border: 0;
-                    border-radius: 20px;
-                }
-            }
-        .interest-button{
-                background-color: #222222;
-                color: rgb(40, 240, 5);
-                border-color: aliceblue;
-                border-radius: 5px;
-                border-width: 1px;
-                border-style: solid;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-left: 20px;
-                padding-right: 20px;
-                cursor: pointer;
-                margin-left: 20px;
-                margin-right: 20px;
-                counter-reset: interest 0;
-                font-family: Libron;
-            }
-        .interest-button:hover{
-                background-color: #333333;
-            }
-        .interest-button:active{
-                background-color: rgb(40, 240, 5);
-                color: #222222;
-                counter-increment: interest;
-            }
-        </style>
     <head>
         <title>SkellsNet - Buddy we both don't want to be here</title>
+        <link rel="stylesheet" href="/Style.css">
     </head>
+     
+    <body  style="background-color:#222222;color:aliceblue;font-family: Libron; ">
         <header>
 
         </header>
-    <main>
-
-      <body  style="background-color:#222222;color:aliceblue;font-family: Libron; ">
-        
         <h1 style="color:rgb(40,240,5);"><marquee>Uh Oh Guys</marquee></h1>
         <hr>
         <p>
             I really fucked up now. I know I get lofty goals all the time but now I fucked up. I started fuckin' around with the idea of making a website and then got caught up spending $6 on a domain name.
         </p>
-        <p>
-            So, uh, welcome to <b>SkellsNet.</b>
-        </p>
+        <p>So, uh, welcome to <b>SkellsNet.</b></p>
         <details>
             <summary>Shit I'd like to do</summary>
             <ul>
@@ -82,6 +24,8 @@
                 <li><s>WernAI Gallery</s></li>
             </ul>
         </details>
+
+        <a href="/FirstPage.html">Try this, dope.</a>
         <br>
             <dialog class="dialog" id="myDialog">
                  <p>This doesn't do anything but thanks anyway</p>
@@ -90,6 +34,7 @@
                  </dialog>
             <button class="interest-button" onclick="myDialog.showModal()" & counter-increment>I'm interested!</button>
         <br>
+        <input type="text" placeholder="Submit Suggestions Here!">
         <br>
         <br>
         Wish me luck
@@ -99,9 +44,10 @@
         <img src="/images/Author.png" height="200" alt="Yep, that's me contemplating my decisions">
         <br>
         <audio controls autoplay src="/audio/Rock and Roll Pt 3.mp3"></audio>
-      </body>
-    </main>
-        <footer>
+    <footer>
         
-        </footer>
+    </footer>  
+    
+    </body>
+
 </html>
